@@ -1,0 +1,65 @@
+#om3 {
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('/images/om3.jpg');
+    background-size:cover;
+}
+
+.clickable {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: border-color 0.2s ease;
+    -webkit-transition: border-color 0.2s ease;
+    -ms-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    padding: 0 3.75em;
+    position: relative;
+}
+
+.clickable:after {
+    -moz-transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    transform: scale(0.25);
+    pointer-events: none;
+    -moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+    -ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    background: #ffffff;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.clickable:hover {
+    border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.clickable:hover:after {
+    opacity: 0.05;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.clickable:hover:active {
+    border-color: #ffffff !important;
+}
+
+.clickable:hover:active:after {
+    opacity: 0.1;
+}
+
