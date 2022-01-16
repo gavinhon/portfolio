@@ -1,5 +1,29 @@
-#om3 {
-    background-size:cover;
+#om3 img {
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(50%);
+    vertical-align: bottom;
+}
+
+.features section.clickable{
+    padding: 0 ;
+    position: relative;
+}
+
+.features section.clickable div.imgTxt{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.features section.clickable a {
+    border-bottom: none;
 }
 
 .clickable {
